@@ -98,7 +98,6 @@ function agregarMetodo() {
     var dato = this.nombre + ", " + this.edad + " años";
     return dato;
   } 
-  
 }
   
 
