@@ -4,12 +4,21 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+  
+  /* 
   const arr = nombre.split("");                       //Convierte string en array.
   const firstLetter = arr.shift();                    //Remueve primer letra y la almacena en la variable.
   const capitalized = firstLetter.toUpperCase();      //Convierte la letra almacena arriba en mayus.
   arr.unshift(capitalized);                           //Mete la letra transformada nuevamente en la array.
   const newName = arr.join('');                       //Convierte el array en string nuevamente.
-  return newName;
+  return newName; 
+  */
+  String.prototype.capitalize = function(){
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  }
+
+  const capitalized = nombre.capitalize();
+  return capitalized;
 }
 
 function invocarCallback(cb) {
