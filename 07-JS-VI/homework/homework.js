@@ -5,7 +5,10 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
   
+
   /* 
+  //Pensandolo un poco, usando muchos metodos xd (procedo a gritar cuando funciona)  
+  
   const arr = nombre.split("");                       //Convierte string en array.
   const firstLetter = arr.shift();                    //Remueve primer letra y la almacena en la variable.
   const capitalized = firstLetter.toUpperCase();      //Convierte la letra almacena arriba en mayus.
@@ -13,6 +16,8 @@ function mayuscula(nombre) {
   const newName = arr.join('');                       //Convierte el array en string nuevamente.
   return newName; 
   */
+
+  //Agregando un capitalize method a String :)  (procedo a pensar que soy un pelotudo, porque no lo hice asi antes xd)
   String.prototype.capitalize = function(){
     return this.charAt(0).toUpperCase() + this.slice(1);
   }
